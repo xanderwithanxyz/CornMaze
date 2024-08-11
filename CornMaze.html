@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var path = new Array();
+path[0] = [1, 12, 1];
+path[1] = [1, 11, 1];
+path[2] = [1, 10, 1];
+path[3] = [1, 9, 1];
+path[4] = [1, 8, 1];
+path[5] = [2, 8, 1];
+path[6] = [3, 8, 1];
+path[7] = [4, 8, 1];
+path[8] = [4, 9, 1];
+path[9] = [5, 9, 1];
+path[10] = [5, 10, 1];
+path[11] = [6, 10, 1];
+path[12] = [7, 10, 1];
+path[13] = [8, 10, 1];
+path[14] = [9, 10, 1];
+path[15] = [9, 9, 0];
+path[16] = [8, 9, 0];
+path[17] = [7, 9, 0];
+path[18] = [7, 8, 0];
+path[19] = [6, 8, 0];
+path[20] = [6, 7, 0];
+path[21] = [6, 6, 0];
+path[22] = [6, 5, 0];
+path[23] = [6, 4, 0];
+path[24] = [6, 3, 0];
+path[25] = [7, 3, 0];
+path[26] = [7, 2, 0];
+path[27] = [8, 2, 0];
+path[28] = [9, 2, 0];
+path[29] = [10, 2, 0];
+path[30] = [11, 2, 0];
+path[31] = [11, 3, 0];
+path[32] = [10, 3, 0];
+path[33] = [9, 3, 0];
+path[34] = [8, 3, 0];
+path[35] = [8, 4, 0];
+path[36] = [7, 4, 0];
+path[37] = [7, 5, 0];
+path[38] = [7, 6, 0];
+path[39] = [7, 7, 0];
+path[40] = [8, 7, 0];
+path[41] = [8, 8, 0];
+path[42] = [9, 8, 0];
+path[43] = [10, 8, 0];
+path[44] = [11, 8, 0];
+path[45] = [11, 9, 0];
+path[46] = [10, 9, 0];
+path[47] = [10, 10, 1];
+path[48] = [11, 10, 1];
+path[49] = [12, 10, 1];
+path[50] = [13, 10, 1];
+path[51] = [14, 10, 1];
+path[52] = [14, 9, 0];
+path[53] = [14, 8, 0];
+path[54] = [13, 8, 0];
+path[55] = [13, 7, 0];
+path[56] = [13, 6, 0];
+path[57] = [14, 6, 0];
+path[58] = [14, 5, 0];
+path[59] = [15, 5, 0];
+path[60] = [16, 5, 0];
+path[61] = [16, 6, 0];
+path[62] = [17, 6, 0];
+path[63] = [17, 7, 0];
+path[64] = [17, 8, 0];
+path[65] = [16, 8, 0];
+path[66] = [16, 9, 0];
+path[67] = [15, 9, 0];
+path[68] = [15, 10, 1];
+path[69] = [16, 10, 1];
+path[70] = [17, 10, 1];
+path[71] = [18, 10, 1];
+path[72] = [19, 10, 1];
+path[73] = [19, 9, 0];
+path[74] = [19, 8, 0];
+path[75] = [19, 7, 0];
+path[76] = [19, 6, 0];
+path[77] = [19, 5, 0];
+path[78] = [20, 5, 0];
+path[79] = [20, 4, 0];
+path[80] = [21, 4, 0];
+path[81] = [21, 5, 0];
+path[82] = [22, 5, 0];
+path[83] = [22, 6, 0];
+path[84] = [21, 6, 0];
+path[85] = [20, 6, 0];
+path[86] = [20, 7, 0];
+path[87] = [20, 8, 0];
+path[88] = [20, 9, 0];
+path[89] = [20, 10, 1];
+path[90] = [21, 10, 1];
+path[91] = [22, 10, 1];
+path[92] = [23, 10, 1];
+path[93] = [24, 10, 1];
+path[94] = [24, 9, 0];
+path[95] = [24, 8, 0];
+path[96] = [24, 7, 0];
+path[97] = [24, 6, 0];
+path[98] = [24, 5, 0];
+path[99] = [25, 5, 1];
+path[100] = [25, 6, 0];
+path[101] = [26, 6, 0];
+path[102] = [26, 5, 0];
+path[103] = [27, 5, 0];
+path[104] = [27, 6, 0];
+path[105] = [28, 6, 0];
+path[106] = [28, 7, 0];
+path[107] = [28, 8, 0];
+path[108] = [28, 9, 0];
+path[109] = [28, 10, 1];
+path[110] = [29, 10, 1];
+path[111] = [30, 10, 1];
+path[112] = [31, 10, 1];
+path[113] = [32, 10, 1];
+path[114] = [33, 10, 1];
+path[115] = [33, 9, 0];
+path[116] = [33, 8, 0];
+path[117] = [33, 7, 0];
+path[118] = [33, 6, 0];
+path[119] = [33, 5, 0];
+path[120] = [33, 4, 0];
+path[121] = [33, 3, 0];
+path[122] = [33, 2, 0];
+path[123] = [34, 2, 0];
+path[124] = [34, 3, 0];
+path[125] = [34, 4, 0];
+path[126] = [35, 4, 0];
+path[127] = [35, 5, 0];
+path[128] = [35, 6, 0];
+path[129] = [36, 6, 0];
+path[130] = [36, 7, 0];
+path[131] = [36, 8, 0];
+path[132] = [37, 8, 0];
+path[133] = [37, 7, 0];
+path[134] = [37, 6, 0];
+path[135] = [38, 6, 0];
+path[136] = [38, 5, 0];
+path[137] = [38, 4, 0];
+path[138] = [39, 4, 0];
+path[139] = [39, 3, 0];
+path[140] = [39, 2, 0];
+path[141] = [40, 2, 0];
+path[142] = [40, 3, 0];
+path[143] = [40, 4, 0];
+path[144] = [40, 5, 0];
+path[145] = [40, 6, 0];
+path[146] = [40, 7, 0];
+path[147] = [40, 8, 0];
+path[148] = [40, 9, 0];
+path[149] = [40, 10, 1];
+path[150] = [41, 10, 1];
+path[151] = [42, 10, 1];
+path[152] = [43, 10, 1];
+path[153] = [44, 10, 1];
+path[154] = [45, 10, 1];
+path[155] = [45, 9, 0];
+path[156] = [44, 9, 0];
+path[157] = [43, 9, 0];
+path[158] = [43, 8, 0];
+path[159] = [42, 8, 0];
+path[160] = [42, 7, 0];
+path[161] = [42, 6, 0];
+path[162] = [43, 6, 0];
+path[163] = [43, 5, 0];
+path[164] = [44, 5, 0];
+path[165] = [45, 5, 0];
+path[166] = [45, 6, 0];
+path[167] = [46, 6, 0];
+path[168] = [46, 7, 0];
+path[169] = [46, 8, 0];
+path[170] = [46, 9, 0];
+path[171] = [46, 10, 1];
+path[172] = [47, 10, 1];
+path[173] = [48, 10, 1];
+path[174] = [49, 10, 1];
+path[175] = [50, 10, 1];
+path[176] = [51, 10, 1];
+path[177] = [51, 9, 0];
+path[178] = [50, 9, 0];
+path[179] = [49, 9, 0];
+path[180] = [48, 9, 0];
+path[181] = [48, 8, 0];
+path[182] = [49, 8, 0];
+path[183] = [49, 7, 0];
+path[184] = [50, 7, 0];
+path[185] = [50, 6, 0];
+path[186] = [51, 6, 0];
+path[187] = [51, 5, 0];
+path[188] = [50, 5, 0];
+path[189] = [49, 5, 0];
+path[190] = [48, 5, 0];
+path[191] = [48, 4, 1];
+path[192] = [49, 4, 1];
+path[193] = [50, 4, 1];
+path[194] = [51, 4, 1];
+path[195] = [52, 4, 1];
+path[196] = [52, 5, 1];
+path[197] = [52, 6, 1];
+path[198] = [52, 7, 1];
+path[199] = [51, 7, 1];
+path[200] = [51, 8, 1];
+path[201] = [52, 8, 1];
+path[202] = [52, 9, 1];
+path[203] = [52, 10, 1];
+path[204] = [53, 10, 1];
+path[205] = [54, 10, 1];
+path[206] = [55, 10, 1];
+path[207] = [56, 10, 1];
+path[208] = [57, 10, 1];
+path[209] = [57, 9, 0];
+path[210] = [56, 9, 0];
+path[211] = [55, 9, 0];
+path[212] = [54, 9, 0];
+path[213] = [54, 8, 0];
+path[214] = [54, 7, 0];
+path[215] = [54, 6, 0];
+path[216] = [54, 5, 0];
+path[217] = [55, 5, 0];
+path[218] = [56, 5, 0];
+path[219] = [57, 5, 0];
+path[220] = [57, 6, 0];
+path[221] = [57, 7, 0];
+path[222] = [56, 7, 0];
+path[223] = [55, 7, 0];
+path[224] = [55, 8, 1];
+path[225] = [56, 8, 1];
+path[226] = [57, 8, 1];
+path[227] = [58, 8, 1];
+path[228] = [58, 9, 1];
+path[229] = [58, 10, 1];
+path[230] = [59, 10, 1];
+path[231] = [60, 10, 1];
+path[232] = [60, 9, 1];
+path[233] = [61, 9, 1];
+path[234] = [61, 8, 1];
+path[235] = [62, 8, 1];
+path[236] = [63, 8, 1];
+path[237] = [64, 8, 1];
+path[238] = [64, 9, 1];
+path[239] = [63, 9, 1];
+path[240] = [63, 10, 1];
+path[241] = [62, 10, 1];
+path[242] = [62, 11, 1];
+path[243] = [62, 12, 1];
+var color = 'ORANGE';
+var ySize=180;
+var xSize=781;
+
+</script>
+</head>
+<body style='background-color: darkolivegreen; text-align: center;' onload='draw(1)'>
+
+
+<canvas id='animationCanvas' width='781' height='180' style='cursor:pointer;'></canvas>
+<div style='display:none;'>
+
+<img id='source' src="https://lh3.googleusercontent.com/pw/AP1GczO33FlmqIohM8JrTOtCGecoSklmtWFqaCSio9Qv4_YMiRM47fHze7fc2LvNbMQLs0JvK-gydLx6tfdjUkvuNo5SphMS-94YgCMQsTKUY_G6XAPiav5DNWPBStCsW1n2NLi3-4qoORMxd3q7vbQlgw6K=w781-h180-s-no-gm" width='781' height='180' alt='Corn Maze'/>
+
+</div>
+
+<div id='directions' style='font: small-caps 16px Courier New; color: yellowgreen; font-weight: 700;'>&nbsp;</div>
+
+<script>
+var image;
+var canvasAnim;
+var ctxAnim;
+var myVar;
+var mag = 12;
+var delay = 400/maxRow;
+var pathSize = path.length-1;
+var mazeCell = [,,];
+canvasAnim = document.getElementById('animationCanvas');
+ctxAnim = canvasAnim.getContext('2d');
+image = document.getElementById('source');
+
+// ySize is 180, 324, or 424, depending on the number of rows
+
+var textLines = 3;
+if(ySize < 200) textLines = 1;
+else if(ySize < 350) textLines = 2;
+
+var maxRow = 0;
+for(var i = 1; i < pathSize; i++)
+{
+  var mazeCell = path[i];
+  y = mazeCell[1];   // thisRow
+  if(y > maxRow) maxRow = y;
+}
+
+var x0;
+var y0;
+var grayout0;
+var x1;
+var y1;
+var grayout1;
+var x2;
+var y2;
+var grayout2;
+
+if(color == "RED") solutionColor = "rgb(255, 63, 63)";
+else if(color == "BLACK")     solutionColor = "rgb(  0,   0,   0)";
+else if(color == "GREEN")     solutionColor = "darkolivegreen";
+else if(color == "BLUE")      solutionColor = "rgb( 63,  63, 255)";
+else if(color == "PINK")      solutionColor = "rgb(255, 150, 150)";
+else if(color == "ORANGE")    solutionColor = "gold";
+else if(color == "TURQUOISE") solutionColor = "rgb( 31, 127, 127)";
+else if(color == "GRAY")      solutionColor = "rgb(100, 100, 100)";
+else if(color == "BROWN")     solutionColor = "rgb(100, 100,  15)";
+else if(color == "YELLOW")    solutionColor = "yellowgreen";
+else if(color == "INDIGO")    solutionColor = "rgb(155,  31, 100)";
+else if(color == "VIOLET")    solutionColor = "rgb(100,   0, 155)";
+else if(color == "WHITE")     solutionColor = "rgb(255, 255, 255)";
+else solutionColor = "black";
+
+var spectrum = 0;  
+if(color == 'RAINBOW' || color == 'TUTTIFRUTTI') spectrum = 1;
+
+var colorWheel = new Array();
+colorWheel[0]  = "rgb(255,  63,  63)";
+colorWheel[1]  = "rgb(242,  94,  31)";
+colorWheel[2]  = "rgb(230, 125,   0)";
+colorWheel[3]  = "rgb(172, 140,  15)";
+colorWheel[4]  = "rgb(155, 155,  31)";
+colorWheel[5]  = "rgb(109, 168,  47)";
+colorWheel[6]  = "rgb( 63, 180,  63)";
+colorWheel[7]  = "rgb( 63, 121, 159)";
+colorWheel[8]  = "rgb( 63,  63, 255)";
+colorWheel[9]  = "rgb(109,  52, 177)";
+colorWheel[10] = "rgb(155,  31, 100)";
+colorWheel[11] = "rgb(127,  15, 127)";
+colorWheel[12] = "rgb(100,   0, 155)";
+colorWheel[13] = "rgb(177,  31, 109 )";
+
+//--------------------------------------------
+// Draw the canvas in white
+//--------------------------------------------
+var i = -1;          // moved here from later point 
+var bare = 1;        // 1) solution needed; 0) erase needed
+
+function draw(bare=1)
+{
+  if(bare == 0) // finished solution so get ready to erase it on click
+  {
+    document.getElementById('directions').innerHTML = 'CLICK MAZE TO ERASE THE MAP';
+    clearInterval(myVar);  // redundant
+    canvasAnim.removeEventListener("click", picture);
+    canvasAnim.addEventListener("click", erase);  // erase the solution
+  }
+  else         // bare maze is done so get ready to start message
+  {
+    document.getElementById('directions').innerHTML = 'CLICK ON THE MAZE TO MAP IT';
+    clearCanvas();         // redundant
+    ctxAnim.drawImage(image, 0, 0, xSize, ySize, 0, 0, xSize, ySize); // bare puzzle
+    i = -1;                                // solution will be initialized
+    clearInterval(myVar);  // redundant
+    canvasAnim.removeEventListener("click", erase);
+    canvasAnim.addEventListener("click", picture);  // solution
+  }
+}
+
+function erase()  // Erase solution path
+{
+  draw(1);   // finished
+}
+function picture()  // Run main loop of solution path
+{
+  if(i == -1) // initialization
+  {
+    document.getElementById('directions').innerHTML = '';
+    xx = yy = 1;
+    if(maxRow < 15) yy = 12;  // what is this????????
+    myVar = setInterval(picture, delay);
+  }
+    
+  // Is the solution completed?
+  if(i >= pathSize || xx < 0 || yy < 0) // Yes
+  {
+    clearInterval(myVar);
+    i = -1;
+    draw(0);   // finished
+  }
+  else // No, so continue tracing the solution
+  {
+    var mazeCell = path[++i];
+    yy = mazeCell[0]; // row
+    xx = mazeCell[1]; // col
+    grayout = mazeCell[2];
+
+    drawBox(yy, xx, grayout);
+  }
+}
+
+function clearCanvas()
+{
+	ctxAnim.fillStyle = "darkolivegreen"; 	// "rgb(255,255,255)";
+	ctxAnim.fillRect (0, 0, xSize, ySize);
+	ctxAnim.fillStyle = "yellowgreen"; 	// "rgb(0,0,0)";
+	ctxAnim.strokeRect (0, 0, xSize, ySize);
+}
+
+//-----------------------------------------
+// Draw in box at (x1, y1) - Not in (x,y)
+//-----------------------------------------
+function drawBox(x, y, grayout) // pixel units
+{
+  x2 = x1;
+  y2 = y1;
+  grayout2 = grayout1; // Prior
+  x1 = x0;
+  y1 = y0;
+  grayout1 = grayout0; // Current
+  x0 = 1 + mag * x;
+  y0 = 1 + mag * y;
+  grayout0 = grayout;  // Future
+  
+  if(spectrum > 0) // Override the default color
+  {
+    var index = Math.floor(i/20);
+    solutionColor = colorWheel[index % 14];
+  }
+    
+  ctxAnim.fillStyle = solutionColor;
+    
+  // Show these cells
+  if(grayout1 == 0) // current
+  {
+    if(grayout2 > 0) // prior
+    {
+      ctxAnim.fillRect(x1-4, y1-4,   7,  7);
+    }
+    
+    else // grayout 2 == 0
+    {
+      if(x2 > x1) ctxAnim.fillRect(x1-4, y1-4,  13,  7); // L
+      else if(x2 < x1) ctxAnim.fillRect(x1-10, y1-4,  13,  7); // R
+      else if(y2 > y1) ctxAnim.fillRect(x1- 4, y1-4,   7, 13); // U
+      else if(y2 < y1) ctxAnim.fillRect(x1- 4, y1-10,  7, 13); // D
+    }
+  }
+
+  // Hide these cells that are current grayed out
+  else // if(grayout1 > 0)
+  {
+    if(x2 > x1 || ( grayout0 == 0 && x0 > x1)) ctxAnim.fillRect(x1-1, y1-1,  12,  2); // L
+    if(x2 < x1 || ( grayout0 == 0 && x0 < x1)) ctxAnim.fillRect(x1-11, y1-1,  12,  2); // R
+    if(y2 > y1 || ( grayout0 == 0 && y0 > y1)) ctxAnim.fillRect(x1- 1, y1-1,   2, 12); // U
+    if(y2 < y1 || ( grayout0 == 0 && y0 < y1)) ctxAnim.fillRect(x1- 1, y1-11,  2, 12); // D
+  }
+}
+
+</script>
+
+</body>
+</html>
